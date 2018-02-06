@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="salesforce.prototipo.com.salesforce.Activities.LoginActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/TextViewHost"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewFilial"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/TextViewFilial"
+        android:layout_marginEnd="67dp"
+        android:layout_marginTop="8dp"
+        android:text="Site:"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextHost"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/EditTextHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextEmp"
+        android:layout_alignStart="@+id/EditTextEmp"
+        android:layout_below="@+id/TextViewHost"
+        android:layout_marginBottom="5dp"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="Ex.: 192.168.0.16"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewFilial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewHost" />
+
+    <EditText
+        android:id="@+id/EditTextEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewFilial"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Digite o cód. da empresa"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewFilial" />
+
+    <EditText
+        android:id="@+id/EditTextUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextEmp"
+        android:layout_alignStart="@+id/EditTextEmp"
+        android:layout_below="@+id/TextViewLogin"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Digite o usuário"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewLogin" />
+
+    <TextView
+        android:id="@+id/TextViewLogin"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewFilial"
+        android:layout_alignStart="@+id/TextViewFilial"
+        android:layout_below="@+id/EditTextEmp"
+        android:layout_marginEnd="56dp"
+        android:text="Login:"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextUser"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextEmp" />
+
+    <EditText
+        android:id="@+id/EditTextSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextUser"
+        android:layout_alignStart="@+id/EditTextUser"
+        android:layout_below="@+id/TextViewSenha"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Digite a senha"
+        android:inputType="textEmailAddress|textPassword"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewSenha" />
+
+    <TextView
+        android:id="@+id/TextViewFilial"
+        android:layout_width="67dp"
+        android:layout_height="17dp"
+        android:layout_below="@+id/EditTextHost"
+        android:layout_marginEnd="36dp"
+        android:layout_toLeftOf="@+id/btnLogin"
+        android:layout_toStartOf="@+id/btnLogin"
+        android:text="Empresa:"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextEmp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextHost" />
+
+    <TextView
+        android:id="@+id/TextViewSenha"
+        android:layout_width="48dp"
+        android:layout_height="16dp"
+        android:layout_alignLeft="@+id/TextViewLogin"
+        android:layout_alignStart="@+id/TextViewLogin"
+        android:layout_below="@+id/EditTextUser"
+        android:layout_marginEnd="56dp"
+        android:text="Senha:"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextSenha"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextUser" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="91dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/EditTextSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:elevation="0dp"
+        android:text="Logar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextSenha"
+        tools:ignore="HardcodedText" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_alignEnd="@+id/EditTextSenha"
+        android:layout_alignLeft="@+id/EditTextSenha"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/EditTextSenha"
+        android:layout_alignStart="@+id/EditTextSenha"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:srcCompat="@drawable/multy_logo" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</android.support.constraint.ConstraintLayout>

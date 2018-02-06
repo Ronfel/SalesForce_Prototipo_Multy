@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Sales Force</string>
+    <string name="texto_clientes">Clientes</string>
+    <string name="texto_agendamento">Agendamentos</string>
+    <string name="texto_sincronizar">Sincronizar</string>
+    <string name="texto_pedidos">Pedidos</string>
+    <string name="texto_NomeOuRazSocCli">Nome</string>
+    <string name="texto_fisica">Física</string>
+    <string name="texto_juridica">Jurídica</string>
+    <string name="texto_cpfoucnpj">CPF</string>
+    <string name="texto_inscricao">Inscrição Estadual</string>
+    <string name="texto_telefone">Telefone</string>
+    <string name="botao_Concluir">Concluir</string>
+    <string name="texto_numped">Nº Pedido</string>
+    <string name="texto_cliente">Cliente</string>
+    <string name="botao_limpar">Limpar</string>
+    <string name="isento">Isento</string>
+    <string name="Tel">(99) 99999-9999</string>
+    <string name="cpf_ou_cnpj">CPF ou CNPJ</string>
+    <string name="nom_razsoc">Nome ou Razão Social</string>
+    <string name="tipo_de_pessoa">Tipo de Pessoa</string>
+    <string name="consulta_de_clientes">Consulta de Clientes</string>
+    <string name="hint_Consulta">Insira o Código ou Razão Social</string>
+    <string name="Contato">E-mail ou Telefone</string>
+</resources>
